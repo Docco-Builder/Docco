@@ -1,7 +1,7 @@
 import yargs from "yargs";
 import { build } from "./commands/build/build";
 
-yargs(process.argv)
+yargs(process.argv.slice(2))
 	.scriptName("docco")
 	.showHelpOnFail(true)
 	.command<{ foo?: string }>({

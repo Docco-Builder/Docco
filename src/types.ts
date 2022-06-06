@@ -1,6 +1,6 @@
-export interface Options {
-	templates?: string;
-	partials?: string;
+export interface DoccoConfig {
+	views?: string;
+	templateName?: string;
 	source?: string;
 	output?: string;
 }
